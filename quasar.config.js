@@ -47,6 +47,9 @@ module.exports = configure(function (/* ctx */) {
 
       alias: {
         modules: path.join(__dirname, './src/modules'),
+        config: path.join(__dirname, './config'),
+        plugins: path.join(__dirname, './src/plugins'),
+        '@vuemodel/orion-pinia-orm': path.join(__dirname, './src/packages/orion-pinia-orm/main'),
       },
 
       vueRouterMode: 'history', // available values: 'hash', 'history'

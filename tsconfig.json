@@ -15,6 +15,12 @@
     "paths": {
       "modules/*": [
         "src/modules/*"
+      ],
+      "config/*": [
+        "config/*"
+      ],
+      "@vuemodel/orion-pinia-orm": [
+        "src/packages/orion-pinia-orm/main"
       ]
     }
   }
