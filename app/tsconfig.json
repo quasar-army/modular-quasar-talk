@@ -1,0 +1,28 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "vueCompilerOptions": {
+    "target": 3,
+    "plugins": [
+      "@vue-macros/volar/define-model"
+    ]
+  },
+  "compilerOptions": {
+    "types": [
+      "unplugin-vue-macros/macros-global"
+    ],
+    "useDefineForClassFields": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "modules/*": [
+        "src/modules/*"
+      ],
+      "config/*": [
+        "config/*"
+      ],
+      "@vuemodel/orion-pinia-orm": [
+        "src/packages/orion-pinia-orm/main"
+      ]
+    }
+  }
+}
