@@ -1,12 +1,12 @@
-import TodosList from '../TodosList.vue'
+import ManageTodosList from '../ManageTodosList.vue'
 
-describe('<TodosList>', () => {
+describe('<ManageTodosList>', () => {
   beforeEach(() => {
     // cy.viewport(800, 600)
   })
 
   it('mounts', () => {
-    cy.mount(TodosList, {
+    cy.mount(ManageTodosList, {
       props: {
         //
       },
